@@ -19,4 +19,34 @@ public class LicensePlate {
         return country + " " + liNumber;
     }
 
+    @Override
+    public int hashCode() {
+        int result = 17;
+        result = 31 * result + (this.liNumber == null ? 0 : this.liNumber.hashCode());
+        result = 31 * result + (this.country == null ? 0 : this.country.hashCode());
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object object) {
+
+        if (this == object) {
+            return true;
+        }
+
+        if (!(object instanceof LicensePlate)) {
+            return false;
+        }
+
+        LicensePlate comparedObject = (LicensePlate) object;
+
+        if (this.liNumber.equals(comparedObject.liNumber)
+                && this.country.equals(comparedObject.country)) {
+            return true;
+        }
+
+        return false;
+    }
+    
+
 }
