@@ -1,6 +1,7 @@
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -45,6 +46,20 @@ public class VehicleRegistry {
         }
 
         return false;
+    }
+
+    public void printLicensePlates() {
+        for (LicensePlate plate : register.keySet()) {
+            System.out.println(plate);
+        }
+    }
+
+    public void printOwners() {
+        HashSet<String> owners = new HashSet<>(this.register.values());
+
+        for (String owner : owners) {
+            System.out.println(owner);
+        }
     }
 
 }
