@@ -14,22 +14,22 @@ import java.util.HashMap;
  */
 public class StorageFacility {
     
-    private HashMap<String, ArrayList<String>> storageUnit;
+    private HashMap<String, ArrayList<String>> storage;
     
     public StorageFacility() {
-        this.storageUnit = new HashMap<>();
+        this.storage = new HashMap<>();
     }
     
     public void add(String unit, String item) {
         
-        this.storageUnit.putIfAbsent(unit, new ArrayList<>());
-        this.storageUnit.get(unit).add(item);
+        this.storage.putIfAbsent(unit, new ArrayList<>());
+        this.storage.get(unit).add(item);
         
     }
     
     public ArrayList<String> contents(String storageUnit) {
         
-        ArrayList<String> content = this.storageUnit.get(storageUnit);
+        ArrayList<String> content = this.storage.get(storageUnit);
         
         if (content == null) {
             return new ArrayList<>();
@@ -37,5 +37,24 @@ public class StorageFacility {
         
         return content;
         
+    }
+    
+    public void remove(String storageUnit, String item) {
+        
+        if(this.storage.containsKey(storageUnit)) {
+            ArrayList<String> storageItems = this.storage.get(storageUnit);
+            
+            storageItems.remove(item);
+            
+            if(storageItems.isEmpty()) {
+                this.storage.remove(storageUnit);
+            }
+        }
+        
+        
+    }
+    
+    public ArrayList<String> storageUnits() {
+        return new ArrayList<>(this.storage.keySet());
     }
 }
