@@ -8,7 +8,7 @@
  *
  * @author jordi
  */
-public class ProductWarehouse extends Warehouse{
+public class ProductWarehouse extends Warehouse {
     
     private String productName;
     
@@ -28,4 +28,5 @@ public class ProductWarehouse extends Warehouse{
     public String toString() {
         return this.getName() + ": " + super.toString();
     }
+    
 }
