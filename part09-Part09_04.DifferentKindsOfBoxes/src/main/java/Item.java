@@ -21,4 +21,31 @@ public class Item {
         return weight;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+       
+        if (this.getClass() != obj.getClass()) {
+            return false;
+        }
+
+        Item comparedObj = (Item) obj;
+
+        if (this.name == null) {
+            return comparedObj.name == null;
+        }
+
+        return this.name.equals(comparedObj.name);
+    }
+
+    @Override
+    public int hashCode() {
+        if (name == null) {
+            return 0;
+        }
+        return name.hashCode();
+    }
+
 }
