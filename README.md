@@ -12,8 +12,8 @@ This course builds on Java Programming I, diving deeper into **object-oriented p
 
 | Part | Status | Main Topics |
 | :--- | :---: | :--- |
-| **Part 8** | 🔄 | Interfaces, Inheritance, and Polymorphism |
-| **Part 9** | ⏳ | Advanced Object-Oriented Programming |
+| **Part 8** | ✅ | Interfaces, Inheritance, and Polymorphism |
+| **Part 9** | 🔄 | Advanced Object-Oriented Programming |
 | **Part 10** | ⏳ | Collections and Streams |
 | **Part 11** | ⏳ | Exceptions and Testing |
 | **Part 12** | ⏳ | Generics and Advanced Java Concepts |
