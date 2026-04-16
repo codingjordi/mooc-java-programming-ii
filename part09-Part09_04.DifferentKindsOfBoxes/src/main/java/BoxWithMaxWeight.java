@@ -18,16 +18,30 @@ public class BoxWithMaxWeight extends Box {
     
     public BoxWithMaxWeight(int capacity) {
         this.maxWeight = capacity;
+        this.items = new ArrayList<>();
     }
 
     @Override
     public void add(Item item) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
+        int currentCapacity = 0;
+        
+        for(Item listItem : items) {
+            currentCapacity += listItem.getWeight();
+        }
+        
+        if(item instanceof Item && (currentCapacity + item.getWeight()) <= this.maxWeight) {
+            this.items.add(item);
+        }
     }
 
     @Override
     public boolean isInBox(Item item) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        if(this.items.contains(item)) {
+            return true;
+        }
+        
+        return false;
     }
     
     
