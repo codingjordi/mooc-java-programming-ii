@@ -33,10 +33,10 @@ This course builds on Java Programming I, diving deeper into **object-oriented p
 Each folder represents a specific **exercise from the MOOC course**.  
 The internal structure follows the standard **Maven / NetBeans layout**:
 
-src/main/java  
+`src/main/java`
 Contains the source code for the solution.
 
-src/test/java  
+`src/test/java` 
 Contains the automated unit tests provided by the university.
 
 ## 💻 How to Run the Exercises
