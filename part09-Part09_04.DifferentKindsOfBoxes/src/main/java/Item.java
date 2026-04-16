@@ -27,16 +27,12 @@ public class Item {
             return true;
         }
        
-        if (this.getClass() != obj.getClass()) {
+        if (!(obj instanceof Item)) {
             return false;
         }
 
         Item comparedObj = (Item) obj;
-
-        if (this.name == null) {
-            return comparedObj.name == null;
-        }
-
+        
         return this.name.equals(comparedObj.name);
     }
 
