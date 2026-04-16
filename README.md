@@ -20,7 +20,7 @@ This course builds on Java Programming I, diving deeper into **object-oriented p
 | **Part 13** | ⏳ | Graphical User Interfaces (JavaFX) |
 | **Part 14** | ⏳ | Final Applications and Project |
 
-*(Legend: 🔄 In Progress | ⏳ Pending)*
+*(Legend: ✅ Completed | 🔄 In Progress | ⏳ Pending)*
 
 ## 🛠️ Tech Stack & Tools
 
