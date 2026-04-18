@@ -26,22 +26,18 @@ public class Item {
         if (this == obj) {
             return true;
         }
-       
+
         if (!(obj instanceof Item)) {
             return false;
         }
 
         Item comparedObj = (Item) obj;
-        
+
         return this.name.equals(comparedObj.name);
     }
 
     @Override
     public int hashCode() {
-        if (name == null) {
-            return 0;
-        }
-        return name.hashCode();
+        return java.util.Objects.hash(name);
     }
-
 }

@@ -11,35 +11,23 @@ import java.util.ArrayList;
  *
  * @author jordi
  */
-public class BoxWithMaxWeight extends Box {
+public class MisplacingBox extends Box {
     
-    private int maxWeight;
     private ArrayList<Item> items;
     
-    public BoxWithMaxWeight(int capacity) {
-        this.maxWeight = capacity;
+    public MisplacingBox () {
         this.items = new ArrayList<>();
     }
 
     @Override
     public void add(Item item) {
-        
-        int currentCapacity = 0;
-        
-        for(Item listItem : items) {
-            currentCapacity += listItem.getWeight();
-        }
-        
-        if(item instanceof Item && (currentCapacity + item.getWeight()) <= this.maxWeight) {
+        if(item instanceof Item) {
             this.items.add(item);
         }
     }
 
     @Override
     public boolean isInBox(Item item) {
-        if(this.items.contains(item)) {
-            return true;
-        }
         return false;
     }
 }
