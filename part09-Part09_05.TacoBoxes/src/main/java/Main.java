@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         // Test your code here!
         
-        TripleTacoBox tacobox = new TripleTacoBox();
+        CustomTacoBox tacobox = new CustomTacoBox(6);
         
         tacobox.eat();
         tacobox.eat();
