@@ -12,15 +12,15 @@ This course builds on Java Programming I, diving deeper into **object-oriented p
 
 | Part | Status | Main Topics |
 | :--- | :---: | :--- |
-| **Part 8** | 🔄 | Interfaces, Inheritance, and Polymorphism |
-| **Part 9** | ⏳ | Advanced Object-Oriented Programming |
+| **Part 8** | ✅ | Interfaces, Inheritance, and Polymorphism |
+| **Part 9** | 🔄 | Advanced Object-Oriented Programming |
 | **Part 10** | ⏳ | Collections and Streams |
 | **Part 11** | ⏳ | Exceptions and Testing |
 | **Part 12** | ⏳ | Generics and Advanced Java Concepts |
 | **Part 13** | ⏳ | Graphical User Interfaces (JavaFX) |
 | **Part 14** | ⏳ | Final Applications and Project |
 
-*(Legend: 🔄 In Progress | ⏳ Pending)*
+*(Legend: ✅ Completed | 🔄 In Progress | ⏳ Pending)*
 
 ## 🛠️ Tech Stack & Tools
 
@@ -33,10 +33,10 @@ This course builds on Java Programming I, diving deeper into **object-oriented p
 Each folder represents a specific **exercise from the MOOC course**.  
 The internal structure follows the standard **Maven / NetBeans layout**:
 
-src/main/java  
+`src/main/java`
 Contains the source code for the solution.
 
-src/test/java  
+`src/test/java` 
 Contains the automated unit tests provided by the university.
 
 ## 💻 How to Run the Exercises
