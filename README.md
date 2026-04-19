@@ -43,7 +43,7 @@ Contains the automated unit tests provided by the university.
 
 1. Clone this repository:
 
-git clone https://github.com/your-username/java-programming-ii.git
+`git clone https://github.com/your-username/java-programming-ii.git`
 
 2. Open **TMCBeans**
 3. Go to `File -> Open Project`
